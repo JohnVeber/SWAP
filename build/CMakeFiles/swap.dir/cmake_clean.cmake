@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/swap.dir/swap.c.o"
-  "CMakeFiles/swap.dir/swap.c.o.d"
-  "CMakeFiles/swap.dir/swap_func.c.o"
-  "CMakeFiles/swap.dir/swap_func.c.o.d"
+  "CMakeFiles/swap.dir/src/swap.c.o"
+  "CMakeFiles/swap.dir/src/swap.c.o.d"
+  "CMakeFiles/swap.dir/src/swap_func.c.o"
+  "CMakeFiles/swap.dir/src/swap_func.c.o.d"
   "swap"
   "swap.pdb"
 )

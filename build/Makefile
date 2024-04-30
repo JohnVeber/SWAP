@@ -129,53 +129,53 @@ swap/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/build
 .PHONY : swap/fast
 
-swap.o: swap.c.o
-.PHONY : swap.o
+src/swap.o: src/swap.c.o
+.PHONY : src/swap.o
 
 # target to build an object file
-swap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/swap.c.o
-.PHONY : swap.c.o
+src/swap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap.c.o
+.PHONY : src/swap.c.o
 
-swap.i: swap.c.i
-.PHONY : swap.i
+src/swap.i: src/swap.c.i
+.PHONY : src/swap.i
 
 # target to preprocess a source file
-swap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/swap.c.i
-.PHONY : swap.c.i
+src/swap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap.c.i
+.PHONY : src/swap.c.i
 
-swap.s: swap.c.s
-.PHONY : swap.s
+src/swap.s: src/swap.c.s
+.PHONY : src/swap.s
 
 # target to generate assembly for a file
-swap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/swap.c.s
-.PHONY : swap.c.s
+src/swap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap.c.s
+.PHONY : src/swap.c.s
 
-swap_func.o: swap_func.c.o
-.PHONY : swap_func.o
+src/swap_func.o: src/swap_func.c.o
+.PHONY : src/swap_func.o
 
 # target to build an object file
-swap_func.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/swap_func.c.o
-.PHONY : swap_func.c.o
+src/swap_func.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap_func.c.o
+.PHONY : src/swap_func.c.o
 
-swap_func.i: swap_func.c.i
-.PHONY : swap_func.i
+src/swap_func.i: src/swap_func.c.i
+.PHONY : src/swap_func.i
 
 # target to preprocess a source file
-swap_func.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/swap_func.c.i
-.PHONY : swap_func.c.i
+src/swap_func.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap_func.c.i
+.PHONY : src/swap_func.c.i
 
-swap_func.s: swap_func.c.s
-.PHONY : swap_func.s
+src/swap_func.s: src/swap_func.c.s
+.PHONY : src/swap_func.s
 
 # target to generate assembly for a file
-swap_func.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/swap_func.c.s
-.PHONY : swap_func.c.s
+src/swap_func.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap_func.c.s
+.PHONY : src/swap_func.c.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... swap"
-	@echo "... swap.o"
-	@echo "... swap.i"
-	@echo "... swap.s"
-	@echo "... swap_func.o"
-	@echo "... swap_func.i"
-	@echo "... swap_func.s"
+	@echo "... src/swap.o"
+	@echo "... src/swap.i"
+	@echo "... src/swap.s"
+	@echo "... src/swap_func.o"
+	@echo "... src/swap_func.i"
+	@echo "... src/swap_func.s"
 .PHONY : help
 
 

@@ -1,10 +1,8 @@
 /* swap.c*/
 
-// Current version v.1.1.0
+// Current version v.2.0.1
 
-/*The program is divided into several files\
- (one additional header and another .c file with definition of called function).\
- CMake used as build automatisation tool.*/
+/* Simple change change of project layout implemented*/
 
 #include <stdio.h>
 #include "swap_func.h"

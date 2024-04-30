@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/john_ubuntu_1/PROJECTS/SWAP/swap.c" "CMakeFiles/swap.dir/swap.c.o" "gcc" "CMakeFiles/swap.dir/swap.c.o.d"
-  "/home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c" "CMakeFiles/swap.dir/swap_func.c.o" "gcc" "CMakeFiles/swap.dir/swap_func.c.o.d"
+  "/home/john_ubuntu_1/PROJECTS/SWAP/src/swap.c" "CMakeFiles/swap.dir/src/swap.c.o" "gcc" "CMakeFiles/swap.dir/src/swap.c.o.d"
+  "/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c" "CMakeFiles/swap.dir/src/swap_func.c.o" "gcc" "CMakeFiles/swap.dir/src/swap_func.c.o.d"
   )
 
 # Targets to which this target links.
