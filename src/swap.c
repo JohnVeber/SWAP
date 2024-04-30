@@ -1,8 +1,8 @@
 /* swap.c*/
 
-// Current version v.2.0.1
+// Current version v.3.0.1
 
-/* Simple change change of project layout implemented*/
+/* Task: Use command line arguments to enter swapped values*/
 
 #include <stdio.h>
 #include "swap_func.h"
