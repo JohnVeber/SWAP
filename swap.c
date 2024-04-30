@@ -1,16 +1,13 @@
 /* swap.c*/
 
-// Current version v.1.0.2
+// Current version v.1.1.0
 
-/* This program is the third attempt to realise swap function in C */
-/* To achieve the goal of this program pointers are used as well as in previous version*/
-/* The function works for integers only at this version of program */
-
-/*New feature: Implemented the ability to enter values, which need to be swapped.*/
+/*The program is divided into several files\
+ (one additional header and another .c file with definition of called function).\
+ CMake used as build automatisation tool.*/
 
 #include <stdio.h>
-
-void swap_i (int *pc, int *pd); // Function declaration
+#include "swap_func.h"
 
 int main (void)
 {
@@ -30,14 +27,6 @@ int main (void)
     {
         printf("Program crash due to incorrect input. Restart the program please.");  
     }
-}
-
-void swap_i(int *pc, int *pd) // Function definition
-{
-    int t = *pc;
-    *pc = *pd;
-    *pd = t;
-    return;
 }
 
 // Bugs reported:
