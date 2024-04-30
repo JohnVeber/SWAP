@@ -73,29 +73,29 @@ CMakeFiles/swap.dir/swap.c.o: CMakeFiles/swap.dir/flags.make
 CMakeFiles/swap.dir/swap.c.o: ../swap.c
 CMakeFiles/swap.dir/swap.c.o: CMakeFiles/swap.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/swap.dir/swap.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/swap.dir/swap.c.o -MF CMakeFiles/swap.dir/swap.c.o.d -o CMakeFiles/swap.dir/swap.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/swap.c
+	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/swap.dir/swap.c.o -MF CMakeFiles/swap.dir/swap.c.o.d -o CMakeFiles/swap.dir/swap.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/swap.c
 
 CMakeFiles/swap.dir/swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/swap.dir/swap.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/john_ubuntu_1/PROJECTS/SWAP/swap.c > CMakeFiles/swap.dir/swap.c.i
+	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/john_ubuntu_1/PROJECTS/SWAP/swap.c > CMakeFiles/swap.dir/swap.c.i
 
 CMakeFiles/swap.dir/swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/swap.dir/swap.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/swap.c -o CMakeFiles/swap.dir/swap.c.s
+	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/swap.c -o CMakeFiles/swap.dir/swap.c.s
 
 CMakeFiles/swap.dir/swap_func.c.o: CMakeFiles/swap.dir/flags.make
 CMakeFiles/swap.dir/swap_func.c.o: ../swap_func.c
 CMakeFiles/swap.dir/swap_func.c.o: CMakeFiles/swap.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/swap.dir/swap_func.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/swap.dir/swap_func.c.o -MF CMakeFiles/swap.dir/swap_func.c.o.d -o CMakeFiles/swap.dir/swap_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c
+	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/swap.dir/swap_func.c.o -MF CMakeFiles/swap.dir/swap_func.c.o.d -o CMakeFiles/swap.dir/swap_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c
 
 CMakeFiles/swap.dir/swap_func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/swap.dir/swap_func.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c > CMakeFiles/swap.dir/swap_func.c.i
+	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c > CMakeFiles/swap.dir/swap_func.c.i
 
 CMakeFiles/swap.dir/swap_func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/swap.dir/swap_func.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c -o CMakeFiles/swap.dir/swap_func.c.s
+	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c -o CMakeFiles/swap.dir/swap_func.c.s
 
 # Object files for target swap
 swap_OBJECTS = \

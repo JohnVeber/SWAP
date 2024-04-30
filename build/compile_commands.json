@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/john_ubuntu_1/PROJECTS/SWAP/build",
+  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/swap.dir/swap.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/swap.c",
+  "file": "/home/john_ubuntu_1/PROJECTS/SWAP/swap.c"
+},
+{
+  "directory": "/home/john_ubuntu_1/PROJECTS/SWAP/build",
+  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/swap.dir/swap_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c",
+  "file": "/home/john_ubuntu_1/PROJECTS/SWAP/swap_func.c"
+}
+]
