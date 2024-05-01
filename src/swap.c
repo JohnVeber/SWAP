@@ -1,5 +1,5 @@
 /* swap.c*/
-// Current version v.3.1.1.
+// Current version v.3.1.2.
 /* Task: Write a new function that returns a structure of two values.*/
 
 #include <stdio.h>
@@ -14,9 +14,21 @@ struct pair {  // declaration of structure template
 };
 
 int quantity(int argc, char *argv[], struct pair*data){ // New function
-    data->first = atoi(argv[1]);
-    data->second = atoi(argv[2]);
-    return OK;
+    if(argc == 3){
+        data->first = atoi(argv[1]);
+        data->second = atoi(argv[2]);
+        return OK;
+    }
+    else if(argc < 3){
+        printf("Error: Enter at least two arguments please.\n");
+        printf("Program finished.\n");
+        return ERR;
+    }
+    else if(argc > 3){
+        printf("Error: Too much amount of arguments.\n");
+        printf("Program finished.\n");
+        return ERR;
+    }
 }
 
 int main (int argc, char *argv[]){
@@ -25,8 +37,8 @@ int main (int argc, char *argv[]){
     int ret = quantity(argc, argv, &data);
 
     if (ret == ERR){
-        printf("Error: Unexpected amount of arguments.\n");
-        printf("Program finished.\n");
+       //printf("Error: Unexpected amount of arguments.\n");
+       //printf("Program finished.\n");
         return EXIT_FAILURE;
     }
     printf("You entered %d and %d.\n", data.first, data.second);
@@ -39,8 +51,6 @@ int main (int argc, char *argv[]){
 }
 
 // Bugs reported:
-//If you enter three arguments from the command line, an error is not handled.
-//Entering only one value predictably results in a segmentation fault.
 
 // Problems found: 
 //Max and min possible supported values aren't found.
