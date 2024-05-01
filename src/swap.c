@@ -1,6 +1,6 @@
 /* swap.c*/
-// Current version v.3.1.3.
-/* Additional task: Move quantity() function to a separate source file.*/
+// Current version v.3.1.4.
+/* Additional task: Add test_2.c which tested quantity function.*/
 
 #include <stdio.h>
 #include <stdlib.h> // For atoi() usage

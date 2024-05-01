@@ -1,10 +1,11 @@
 // test_1.c 
-// With this test, two values are passed into a function\
+// With this test, two values are passed into a function swap_i()\
  and output data compared with expected.
 
 #include <stdio.h>
 #include <assert.h>
 #include "../src/swap_func.h"
+
 void pair(void){
     int f = 10;
     int s = 20;

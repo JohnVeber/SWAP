@@ -129,6 +129,30 @@ test_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/build
 .PHONY : test_1/fast
 
+home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.o: home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o
+.PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.o
+
+# target to build an object file
+home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o
+.PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o
+
+home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.i: home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i
+.PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.i
+
+# target to preprocess a source file
+home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i
+.PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i
+
+home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.s: home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s
+.PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.s
+
+# target to generate assembly for a file
+home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s
+.PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s
+
 home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.o: home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o
 .PHONY : home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.o
 
@@ -177,6 +201,30 @@ test_1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_1.c.s
 .PHONY : test_1.c.s
 
+test_2.o: test_2.c.o
+.PHONY : test_2.o
+
+# target to build an object file
+test_2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_2.c.o
+.PHONY : test_2.c.o
+
+test_2.i: test_2.c.i
+.PHONY : test_2.i
+
+# target to preprocess a source file
+test_2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_2.c.i
+.PHONY : test_2.c.i
+
+test_2.s: test_2.c.s
+.PHONY : test_2.s
+
+# target to generate assembly for a file
+test_2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_1.dir/build.make CMakeFiles/test_1.dir/test_2.c.s
+.PHONY : test_2.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_1"
+	@echo "... home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.o"
+	@echo "... home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.i"
+	@echo "... home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.s"
 	@echo "... home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.o"
 	@echo "... home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.i"
 	@echo "... home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.s"
 	@echo "... test_1.o"
 	@echo "... test_1.i"
 	@echo "... test_1.s"
+	@echo "... test_2.o"
+	@echo "... test_2.i"
+	@echo "... test_2.s"
 .PHONY : help
 
 

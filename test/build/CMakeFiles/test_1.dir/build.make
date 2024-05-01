@@ -69,10 +69,24 @@ include CMakeFiles/test_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_1.dir/flags.make
 
+CMakeFiles/test_1.dir/test_2.c.o: CMakeFiles/test_1.dir/flags.make
+CMakeFiles/test_1.dir/test_2.c.o: ../test_2.c
+CMakeFiles/test_1.dir/test_2.c.o: CMakeFiles/test_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_1.dir/test_2.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_1.dir/test_2.c.o -MF CMakeFiles/test_1.dir/test_2.c.o.d -o CMakeFiles/test_1.dir/test_2.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/test/test_2.c
+
+CMakeFiles/test_1.dir/test_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_1.dir/test_2.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/john_ubuntu_1/PROJECTS/SWAP/test/test_2.c > CMakeFiles/test_1.dir/test_2.c.i
+
+CMakeFiles/test_1.dir/test_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_1.dir/test_2.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/test/test_2.c -o CMakeFiles/test_1.dir/test_2.c.s
+
 CMakeFiles/test_1.dir/test_1.c.o: CMakeFiles/test_1.dir/flags.make
 CMakeFiles/test_1.dir/test_1.c.o: ../test_1.c
 CMakeFiles/test_1.dir/test_1.c.o: CMakeFiles/test_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_1.dir/test_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_1.dir/test_1.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_1.dir/test_1.c.o -MF CMakeFiles/test_1.dir/test_1.c.o.d -o CMakeFiles/test_1.dir/test_1.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/test/test_1.c
 
 CMakeFiles/test_1.dir/test_1.c.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/test_1.dir/test_1.c.s: cmake_force
 CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o: CMakeFiles/test_1.dir/flags.make
 CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o: /home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c
 CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o: CMakeFiles/test_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o -MF CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o.d -o CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c
 
 CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.i: cmake_force
@@ -97,19 +111,37 @@ CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c -o CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.s
 
+CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o: CMakeFiles/test_1.dir/flags.make
+CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o: /home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c
+CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o: CMakeFiles/test_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o -MF CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o.d -o CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c
+
+CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c > CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.i
+
+CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c -o CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.s
+
 # Object files for target test_1
 test_1_OBJECTS = \
+"CMakeFiles/test_1.dir/test_2.c.o" \
 "CMakeFiles/test_1.dir/test_1.c.o" \
-"CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o"
+"CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o" \
+"CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o"
 
 # External object files for target test_1
 test_1_EXTERNAL_OBJECTS =
 
+test_1: CMakeFiles/test_1.dir/test_2.c.o
 test_1: CMakeFiles/test_1.dir/test_1.c.o
 test_1: CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c.o
+test_1: CMakeFiles/test_1.dir/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c.o
 test_1: CMakeFiles/test_1.dir/build.make
 test_1: CMakeFiles/test_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable test_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/john_ubuntu_1/PROJECTS/SWAP/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable test_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
