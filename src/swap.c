@@ -1,38 +1,47 @@
 /* swap.c*/
-
-// Current version v.3.0.4
-
-/* Task: Use command line arguments to enter swapped values*/
-/* Use simple logic to handle argc results*/
+// Current version v.3.1.0.
+/* Task: Write a new function that returns a structure of two values.*/
 
 #include <stdio.h>
 #include <stdlib.h> // For atoi() usage
 #include "swap_func.h"
+#define OK 0 
+#define ERR 1
 
+struct pair {
+    int first;
+    int second;
+};
+
+int quantity(int argc, char *argv[], struct pair*data){ // New function with temporary stub
+    data->first = 10;
+    data->second = 200;
+    return OK;
+}
 
 int main (int argc, char *argv[]){
-    int a, b;
+    struct pair data = {0, 0};
+    int ret = quantity(argc, argv, &data);
 
-    if (argc == 3){
-    a = atoi(argv[1]); // Use atoi to cast numbers in string form to their integer values.
-    b = atoi(argv[2]); 
-        printf("You entered %d and %d.\n", a, b);
-        swap_i(&a, &b); // Function call
-
-        printf("Values after swapping are: ");
-        printf("a = %d, b = %d\n", a, b);
-        return 0;        
-        printf("\n\n");  
-    }
-    if (argc != 3){
+    if (ret == ERR){
         printf("Error: Unexpected amount of arguments.\n");
         printf("Program finished.\n");
+        return EXIT_FAILURE;
     }
+    printf("You entered %d and %d.\n", data.first, data.second);
+    swap_i(&data.first, &data.second); // Function call
 
+    printf("Values after swapping are: ");
+    printf("%d and %d\n", data.first, data.second);
+    printf("\n\n");  
+    return 0;        
+    //a = atoi(argv[1]); // Use atoi to cast numbers in string form to their integer values.
+    //b = atoi(argv[2]); 
 }
 
 // Bugs reported:
-//There is an overflow of integers variables from the tenth inputed digit.
 
 // Problems found: 
 //Max and min possible supported values aren't found.
+//Integers overflow isn't checked yet.
+// A quantity() function is not implemented yet (temporary stub used).
