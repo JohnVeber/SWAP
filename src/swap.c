@@ -1,5 +1,5 @@
 /* swap.c*/
-// Current version v.3.1.0.
+// Current version v.3.1.1.
 /* Task: Write a new function that returns a structure of two values.*/
 
 #include <stdio.h>
@@ -8,19 +8,20 @@
 #define OK 0 
 #define ERR 1
 
-struct pair {
-    int first;
-    int second;
+struct pair {  // declaration of structure template
+    int first; // A field of structure
+    int second;// A field of structure
 };
 
-int quantity(int argc, char *argv[], struct pair*data){ // New function with temporary stub
-    data->first = 10;
-    data->second = 200;
+int quantity(int argc, char *argv[], struct pair*data){ // New function
+    data->first = atoi(argv[1]);
+    data->second = atoi(argv[2]);
     return OK;
 }
 
 int main (int argc, char *argv[]){
-    struct pair data = {0, 0};
+    struct pair data = {0, 0}; //declaration the "data" as a variable of struct type\
+     with "pair" descriptor.
     int ret = quantity(argc, argv, &data);
 
     if (ret == ERR){
@@ -35,13 +36,12 @@ int main (int argc, char *argv[]){
     printf("%d and %d\n", data.first, data.second);
     printf("\n\n");  
     return 0;        
-    //a = atoi(argv[1]); // Use atoi to cast numbers in string form to their integer values.
-    //b = atoi(argv[2]); 
 }
 
 // Bugs reported:
+//If you enter three arguments from the command line, an error is not handled.
+//Entering only one value predictably results in a segmentation fault.
 
 // Problems found: 
 //Max and min possible supported values aren't found.
 //Integers overflow isn't checked yet.
-// A quantity() function is not implemented yet (temporary stub used).
