@@ -1,8 +1,9 @@
 /* swap.c*/
 
-// Current version v.3.0.3
+// Current version v.3.0.4
 
 /* Task: Use command line arguments to enter swapped values*/
+/* Use simple logic to handle argc results*/
 
 #include <stdio.h>
 #include <stdlib.h> // For atoi() usage
@@ -31,7 +32,7 @@ int main (int argc, char *argv[]){
 }
 
 // Bugs reported:
-//If only one number entered (argc == 2) segfault is observed.
-//Bug fixed: Variable assignments have been moved inside "if" condition.
+//There is an overflow of integers variables from the tenth inputed digit.
 
 // Problems found: 
+//Max and min possible supported values aren't found.
