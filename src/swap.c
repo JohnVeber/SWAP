@@ -5,31 +5,25 @@
 /* Task: Use command line arguments to enter swapped values*/
 
 #include <stdio.h>
+#include <stdlib.h> // For atoi() usage
 #include "swap_func.h"
 
-int main (void)
+int main (int argc, char *argv[])
 {
     int a, b;
-    printf("Please, enter a pair of decimal unsigned numbers one by one.\n");
-    printf("Use \"space\" button to divide input numbers.\n");
-    printf("Use \"enter\" button to confirm input.\n");
-    if (scanf("%d %d",&a, &b) == 2)
-    {
-        printf("Values before swapping were: a = %d, b = %d.\n", a, b);
-        swap_i(&a, &b); // Function call
-        printf("Values after swapping are: ");
-        printf("a = %d, b = %d\n", a, b);
-        return 0;        
-    }
-    else
-    {
-        printf("Program crash due to incorrect input. Restart the program please.");  
-    }
+    a = atoi(argv[1]); // Use atoi to cast numbers in string form to their integer values.
+    b = atoi(argv[2]); 
+
+    printf("You entered %d and %d.\n", a, b);
+
+    swap_i(&a, &b); // Function call
+
+    printf("Values after swapping are: ");
+    printf("a = %d, b = %d\n", a, b);
+    return 0;        
+    printf("\n\n");  
 }
 
 // Bugs reported:
-// Bug №1 No protection against integer overflow.
 
 // Problems found:
-//  №1 An ability to exit the program by pressing a preliminary key\
- (e.g. "q") is not implemented.
