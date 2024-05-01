@@ -15,4 +15,7 @@ Unfinished part of the task: One more test need to be added.
 
 The current tasks (v.3 branch) are:
 -implement passing arguments to a function via command line options
+-add one more test
+-implement program termination if an unexpected number of arguments is entered
 Status: *(In progress at v.3 branch).
+
