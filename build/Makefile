@@ -129,6 +129,30 @@ swap/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/build
 .PHONY : swap/fast
 
+src/quantity_func.o: src/quantity_func.c.o
+.PHONY : src/quantity_func.o
+
+# target to build an object file
+src/quantity_func.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/quantity_func.c.o
+.PHONY : src/quantity_func.c.o
+
+src/quantity_func.i: src/quantity_func.c.i
+.PHONY : src/quantity_func.i
+
+# target to preprocess a source file
+src/quantity_func.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/quantity_func.c.i
+.PHONY : src/quantity_func.c.i
+
+src/quantity_func.s: src/quantity_func.c.s
+.PHONY : src/quantity_func.s
+
+# target to generate assembly for a file
+src/quantity_func.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/quantity_func.c.s
+.PHONY : src/quantity_func.c.s
+
 src/swap.o: src/swap.c.o
 .PHONY : src/swap.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... swap"
+	@echo "... src/quantity_func.o"
+	@echo "... src/quantity_func.i"
+	@echo "... src/quantity_func.s"
 	@echo "... src/swap.o"
 	@echo "... src/swap.i"
 	@echo "... src/swap.s"

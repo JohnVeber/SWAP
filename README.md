@@ -14,8 +14,8 @@ Status: *Released with one test only at v.2.0.2
 Unfinished part of the task: One more test need to be added.
 
 The current tasks (v.3 branch) are:
--implement passing arguments to a function via command line options
+-implement passing arguments to a function via command line options (DONE)
 -add one more test
--implement program termination if an unexpected number of arguments is entered
+-implement program termination if an unexpected number of arguments is entered (DONE)
 Status: *(In progress at v.3 branch).
 
