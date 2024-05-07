@@ -64,10 +64,24 @@ void not_enough_data(void){
     printf("Test 5 passed.\n");
 }
 
+/* Test 6. Char parameters 2 and 3 instead of int*/
+void bad_data_type(void){
+    struct pair datacheck_tst6 = {0, 0};
+    int argc = 3;
+    char *argv_chars[] = {"test_6.c", "R", "T"};
+    int res_tst6;
+
+    res_tst6 = quantity(argc, argv_chars, &datacheck_tst6);
+    assert(res_tst6 == ERR);
+    assert((datacheck_tst6.first == 0) && (datacheck_tst6.second == 0));
+    printf("Test 6 passed.\n");
+}
+
 int main(void){
     pair();
     assignment();
     no_data();
     too_much_data();
     not_enough_data();
+    bad_data_type();
 }
