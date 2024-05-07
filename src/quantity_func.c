@@ -1,4 +1,6 @@
 #include "quantity_func.h"
+#include <stdio.h>
+#include <stdlib.h> /* For atoi() usage. */
 
 int quantity(int argc, char *argv[], struct pair*data){ // Function definition
     if(argc == 3){

@@ -1,3 +1,6 @@
 /home/john_ubuntu_1/PROJECTS/SWAP/build/CMakeFiles/swap.dir
 /home/john_ubuntu_1/PROJECTS/SWAP/build/CMakeFiles/edit_cache.dir
 /home/john_ubuntu_1/PROJECTS/SWAP/build/CMakeFiles/rebuild_cache.dir
+/home/john_ubuntu_1/PROJECTS/SWAP/build/test/CMakeFiles/tests.dir
+/home/john_ubuntu_1/PROJECTS/SWAP/build/test/CMakeFiles/edit_cache.dir
+/home/john_ubuntu_1/PROJECTS/SWAP/build/test/CMakeFiles/rebuild_cache.dir

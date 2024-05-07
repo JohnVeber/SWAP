@@ -129,6 +129,19 @@ swap/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/build
 .PHONY : swap/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
 src/quantity_func.o: src/quantity_func.c.o
 .PHONY : src/quantity_func.o
 
@@ -210,6 +223,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... swap"
+	@echo "... tests"
 	@echo "... src/quantity_func.o"
 	@echo "... src/quantity_func.i"
 	@echo "... src/quantity_func.s"
