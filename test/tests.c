@@ -22,7 +22,7 @@ void assignment(void){
 
     char *argv[] = {"test_2.c", "1", "2"};
     int res_tst2;
-    res_tst2 = (argc, argv, &datacheck);
+    res_tst2 = quantity(argc, argv, &datacheck);
     assert(res_tst2 == OK);
     assert((datacheck.first == 1) && (datacheck.second == 2));
     printf("Test 2 passed.\n");

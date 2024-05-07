@@ -12,7 +12,6 @@ int main (int argc, char *argv[]){
      with "pair" descriptor.*/
 
     if (quantity(argc, argv, &data) == ERR){
-        printf("Error: Unexpected amount of arguments.Program finished.\n");
         return EXIT_FAILURE;
     }
 
