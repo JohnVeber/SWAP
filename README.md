@@ -15,7 +15,9 @@ Unfinished part of the task: One more test need to be added.
 
 The current tasks (v.3 branch) are:
 -implement passing arguments to a function via command line options (DONE)
--add one more test
+-add one more test (DONE)
 -implement program termination if an unexpected number of arguments is entered (DONE)
+-replace all fo tests in a one source file (DONE)
+-rename swap.c to main.c (DONE)
 Status: *(In progress at v.3 branch).
 

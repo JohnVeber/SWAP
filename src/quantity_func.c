@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h> /* For atoi() usage. */
 
-int quantity(int argc, char *argv[], struct pair*data){ // Function definition
+int quantity(int argc, char *argv[], struct pair*data){ 
     if(argc == 3){
         data->first = atoi(argv[1]);
         data->second = atoi(argv[2]);

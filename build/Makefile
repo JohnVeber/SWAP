@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named swap
+# Target rules for targets named main
 
 # Build rule for target.
-swap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 swap
-.PHONY : swap
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-swap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/build
-.PHONY : swap/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -142,12 +142,36 @@ tests/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+src/main.o: src/main.c.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.c.s
+.PHONY : src/main.c.s
+
 src/quantity_func.o: src/quantity_func.c.o
 .PHONY : src/quantity_func.o
 
 # target to build an object file
 src/quantity_func.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/quantity_func.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/quantity_func.c.o
 .PHONY : src/quantity_func.c.o
 
 src/quantity_func.i: src/quantity_func.c.i
@@ -155,7 +179,7 @@ src/quantity_func.i: src/quantity_func.c.i
 
 # target to preprocess a source file
 src/quantity_func.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/quantity_func.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/quantity_func.c.i
 .PHONY : src/quantity_func.c.i
 
 src/quantity_func.s: src/quantity_func.c.s
@@ -163,39 +187,15 @@ src/quantity_func.s: src/quantity_func.c.s
 
 # target to generate assembly for a file
 src/quantity_func.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/quantity_func.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/quantity_func.c.s
 .PHONY : src/quantity_func.c.s
-
-src/swap.o: src/swap.c.o
-.PHONY : src/swap.o
-
-# target to build an object file
-src/swap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap.c.o
-.PHONY : src/swap.c.o
-
-src/swap.i: src/swap.c.i
-.PHONY : src/swap.i
-
-# target to preprocess a source file
-src/swap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap.c.i
-.PHONY : src/swap.c.i
-
-src/swap.s: src/swap.c.s
-.PHONY : src/swap.s
-
-# target to generate assembly for a file
-src/swap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap.c.s
-.PHONY : src/swap.c.s
 
 src/swap_func.o: src/swap_func.c.o
 .PHONY : src/swap_func.o
 
 # target to build an object file
 src/swap_func.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap_func.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/swap_func.c.o
 .PHONY : src/swap_func.c.o
 
 src/swap_func.i: src/swap_func.c.i
@@ -203,7 +203,7 @@ src/swap_func.i: src/swap_func.c.i
 
 # target to preprocess a source file
 src/swap_func.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap_func.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/swap_func.c.i
 .PHONY : src/swap_func.c.i
 
 src/swap_func.s: src/swap_func.c.s
@@ -211,7 +211,7 @@ src/swap_func.s: src/swap_func.c.s
 
 # target to generate assembly for a file
 src/swap_func.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/swap.dir/build.make CMakeFiles/swap.dir/src/swap_func.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/swap_func.c.s
 .PHONY : src/swap_func.c.s
 
 # Help Target
@@ -222,14 +222,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... swap"
+	@echo "... main"
 	@echo "... tests"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/quantity_func.o"
 	@echo "... src/quantity_func.i"
 	@echo "... src/quantity_func.s"
-	@echo "... src/swap.o"
-	@echo "... src/swap.i"
-	@echo "... src/swap.s"
 	@echo "... src/swap_func.o"
 	@echo "... src/swap_func.i"
 	@echo "... src/swap_func.s"

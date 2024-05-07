@@ -1,17 +1,17 @@
 [
 {
   "directory": "/home/john_ubuntu_1/PROJECTS/SWAP/build",
-  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/swap.dir/src/swap.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/swap.c",
-  "file": "/home/john_ubuntu_1/PROJECTS/SWAP/src/swap.c"
+  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/main.dir/src/main.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/main.c",
+  "file": "/home/john_ubuntu_1/PROJECTS/SWAP/src/main.c"
 },
 {
   "directory": "/home/john_ubuntu_1/PROJECTS/SWAP/build",
-  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/swap.dir/src/swap_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c",
+  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/main.dir/src/swap_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c",
   "file": "/home/john_ubuntu_1/PROJECTS/SWAP/src/swap_func.c"
 },
 {
   "directory": "/home/john_ubuntu_1/PROJECTS/SWAP/build",
-  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/swap.dir/src/quantity_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c",
+  "command": "/usr/bin/gcc-12   -g -o CMakeFiles/main.dir/src/quantity_func.c.o -c /home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c",
   "file": "/home/john_ubuntu_1/PROJECTS/SWAP/src/quantity_func.c"
 },
 {
