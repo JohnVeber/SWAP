@@ -1,0 +1,1 @@
+/usr/bin/gcc-12 -g CMakeFiles/tests.dir/tests.c.o CMakeFiles/tests.dir/__/src/swap_func.c.o CMakeFiles/tests.dir/__/src/quantity_func.c.o -o tests 
