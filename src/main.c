@@ -13,7 +13,7 @@ int main (int argc, char *argv[]){
 
     if (quantity(argc, argv, &data) == ERR_NOT_ENOUGH){
         printf("Error: Enter at least two arguments please and check their types ");
-        printf("(only numbers are accepted).\nProgram finished.\n");
+        printf("(only integer numbers are accepted).\nProgram finished.\n");
         return EXIT_FAILURE;
     }
     else if (quantity(argc, argv, &data) == ERR_TOO_MUCH){
