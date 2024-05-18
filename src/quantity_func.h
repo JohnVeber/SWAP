@@ -4,7 +4,9 @@
 #define QUANTITY_FUNC_H
 
 #define OK 0 
-#define ERR 1
+#define ERR_NOT_ENOUGH 1
+#define ERR_TOO_MUCH 2
+
 
 struct pair {  /* Declaration of structure template. */
     int first; /* A field of structure. */

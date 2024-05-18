@@ -9,13 +9,9 @@ int quantity(int argc, char *argv[], struct pair*data){
         return OK;
     }
     else if(argc < 3){
-        printf("Error: Enter at least two arguments please.\n");
-        printf("Program finished.\n");
-        return ERR;
+        return ERR_NOT_ENOUGH;
     }
     else if(argc > 3){
-        printf("Error: Too much amount of arguments.\n");
-        printf("Program finished.\n");
-        return ERR;
+        return ERR_TOO_MUCH;
     }
 }

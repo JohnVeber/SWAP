@@ -32,7 +32,7 @@ void assignment(void){
 void no_data(void){
     struct pair datacheck_tst3 = {0, 0};
     int argc_bad = 1;
-    char *argv_bad[] = {"test_3.c", " ", " "};
+    char *argv_bad[] = {"test_3.c"};
     int res_tst3;
 
     res_tst3 = quantity(argc_bad, argv_bad, &datacheck_tst3);
@@ -44,7 +44,7 @@ void no_data(void){
 void too_much_data(void){
     struct pair datacheck_tst4 = {0, 0};
     int argc_bad = 4;
-    char *argv_bad[] = {"test_4.c", " ", " ", " "};
+    char *argv_bad[] = {"test_4.c", "1", "2", "3"};
     int res_tst4;
 
     res_tst4 = quantity(argc_bad, argv_bad, &datacheck_tst4);
@@ -56,7 +56,7 @@ void too_much_data(void){
 void not_enough_data(void){
     struct pair datacheck_tst5 = {0, 0};
     int argc_bad = 2;
-    char *argv_bad[] = {"test_5.c", "4", "5"};
+    char *argv_bad[] = {"test_5.c", "4"};
     int res_tst5;
 
     res_tst5 = quantity(argc_bad, argv_bad, &datacheck_tst5);

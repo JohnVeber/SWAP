@@ -11,10 +11,17 @@ int main (int argc, char *argv[]){
     struct pair data = {0, 0}; /* declaration the "data" as a variable of struct type\
      with "pair" descriptor.*/
 
-    if (quantity(argc, argv, &data) == ERR){
+    if (quantity(argc, argv, &data) == ERR_NOT_ENOUGH){
+        printf("Error: Enter at least two arguments please and check their types ");
+        printf("(only numbers are accepted).\nProgram finished.\n");
         return EXIT_FAILURE;
     }
-
+    else if (quantity(argc, argv, &data) == ERR_TOO_MUCH){
+        printf("Error: Too much amount of arguments.\n");
+        printf("Program finished.\n");
+        return EXIT_FAILURE;
+    }
+    
     printf("You entered %d and %d.\n", data.first, data.second);
     swap_i(&data.first, &data.second);
 
